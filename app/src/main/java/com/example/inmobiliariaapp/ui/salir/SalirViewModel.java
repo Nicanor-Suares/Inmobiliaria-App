@@ -1,19 +1,26 @@
 package com.example.inmobiliariaapp.ui.salir;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+import android.app.Application;
+import android.content.Context;
+import android.content.Intent;
 
-public class SalirViewModel extends ViewModel {
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 
-    private final MutableLiveData<String> mText;
+import com.example.inmobiliariaapp.MainActivity;
 
-    public SalirViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+public class SalirViewModel extends AndroidViewModel {
+
+    private Context context;
+
+    public SalirViewModel(@NonNull Application application) {
+        super(application);
+        context = application.getApplicationContext();
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public void logout() {
+        Intent intent = new Intent(context, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        context.startActivity(intent);
     }
 }
