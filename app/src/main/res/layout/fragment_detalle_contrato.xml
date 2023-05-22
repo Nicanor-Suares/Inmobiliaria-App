@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:" />
+
+    <TextView
+        android:id="@+id/tvCodigoContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de inicio:" />
+
+    <TextView
+        android:id="@+id/tvFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha inicio"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de finalización:" />
+
+    <TextView
+        android:id="@+id/tvFechaFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha fin"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto de alquiler:" />
+
+    <TextView
+        android:id="@+id/tvMontoContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inquilino:" />
+
+    <TextView
+        android:id="@+id/tvInquilinoContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inquilino: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inmueble:" />
+
+    <TextView
+        android:id="@+id/tvInmuebleContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inmueble: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPagos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Pagos" />
+
+</LinearLayout>

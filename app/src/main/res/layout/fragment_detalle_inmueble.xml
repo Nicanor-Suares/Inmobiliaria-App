@@ -1,0 +1,109 @@
+<!-- detalle_inmueble.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:" />
+    <!-- Inmueble codigo -->
+    <TextView
+        android:id="@+id/tvCodigoInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto:" />
+    <!-- Inmueble photo -->
+    <ImageView
+        android:id="@+id/ivFotoInmueble"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/juan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direccion:" />
+    <!-- Inmueble address -->
+    <TextView
+        android:id="@+id/tvDireccionInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección del inmueble"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio:" />
+    <!-- Inmueble price -->
+    <TextView
+        android:id="@+id/tvPrecioInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio del inmueble"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo:" />
+    <!-- Inmueble tipo -->
+    <TextView
+        android:id="@+id/tvTipoInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uso:" />
+    <!-- Inmueble uso -->
+    <TextView
+        android:id="@+id/tvUsoInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uso: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambientes:" />
+    <!-- Inmueble ambientes -->
+    <TextView
+        android:id="@+id/tvAmbientesInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambientes: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponible:" />
+    <!-- Inmueble disponible -->
+    <CheckBox
+        android:id="@+id/cbDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Disponible" />
+
+</LinearLayout>

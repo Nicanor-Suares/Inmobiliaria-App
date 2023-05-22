@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:" />
+
+    <TextView
+        android:id="@+id/tvCodigoPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código pago: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nro de pago:" />
+
+    <TextView
+        android:id="@+id/tvNroPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nro"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código de contrato:" />
+
+    <TextView
+        android:id="@+id/tvCodigoContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha fin"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importe:" />
+
+    <TextView
+        android:id="@+id/tvImportePago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de pago:" />
+
+    <TextView
+        android:id="@+id/tvFechaPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inquilino: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

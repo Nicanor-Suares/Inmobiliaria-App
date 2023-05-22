@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:" />
+    <TextView
+        android:id="@+id/tvCodigoInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:" />
+    <TextView
+        android:id="@+id/tvNombreInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Inquilino"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:" />
+    <TextView
+        android:id="@+id/tvApellidoInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellido del Inquilino"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI:" />
+    <TextView
+        android:id="@+id/tvDniInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNI: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:" />
+    <TextView
+        android:id="@+id/tvEmailInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:" />
+    <TextView
+        android:id="@+id/tvTelefonoInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Garante:" />
+    <TextView
+        android:id="@+id/tvGaranteInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Garante: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono del garante::" />
+    <TextView
+        android:id="@+id/tvTelefonoGarante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono Garante: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
