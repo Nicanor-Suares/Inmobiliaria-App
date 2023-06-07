@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.inmobiliariaapp.R;
@@ -14,7 +15,6 @@ import com.example.inmobiliariaapp.models.Inmueble;
 import com.example.inmobiliariaapp.request.ApiClient;
 
 public class DetalleContratoViewModel extends ViewModel {
-
 
     private ApiClient apiClient;
     private MutableLiveData<Contrato> contrato;
@@ -46,6 +46,5 @@ public class DetalleContratoViewModel extends ViewModel {
         bundle.putSerializable("contrato", contrato.getValue());
         Navigation.findNavController(v).navigate(R.id.nav_pago, bundle);
     }
-
 
 }
