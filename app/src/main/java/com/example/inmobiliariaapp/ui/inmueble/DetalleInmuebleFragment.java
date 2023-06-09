@@ -11,6 +11,8 @@ import androidx.lifecycle.ViewModelProvider;
 import com.bumptech.glide.Glide;
 import com.example.inmobiliariaapp.databinding.FragmentDetalleInmuebleBinding;
 
+import java.text.DecimalFormat;
+
 public class DetalleInmuebleFragment extends Fragment {
 
     private DetalleInmuebleViewModel vm;
@@ -30,7 +32,12 @@ public class DetalleInmuebleFragment extends Fragment {
                 binding.tvCodigoInmueble.setText(String.valueOf(inmueble.getIdInmueble()));
                 Glide.with(binding.ivFotoInmueble.getContext()).load(inmueble.getImagen()).into(binding.ivFotoInmueble);
                 binding.tvDireccionInmueble.setText(inmueble.getDireccion());
-                binding.tvPrecioInmueble.setText(String.valueOf(inmueble.getPrecio()));
+
+                DecimalFormat decimalFormat = new DecimalFormat("#,##0");
+                String formattedPrice = decimalFormat.format(inmueble.getPrecio());
+                binding.tvPrecioInmueble.setText(formattedPrice);
+                //binding.tvPrecioInmueble.setText(String.valueOf(inmueble.getPrecio()));
+
                 binding.tvAmbientesInmueble.setText(String.valueOf(inmueble.getAmbientes()));
                 binding.tvUsoInmueble.setText(inmueble.getUso());
                 binding.tvTipoInmueble.setText(inmueble.getTipo());

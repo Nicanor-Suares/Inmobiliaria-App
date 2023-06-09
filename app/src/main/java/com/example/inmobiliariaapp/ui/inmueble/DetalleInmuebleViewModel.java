@@ -1,8 +1,12 @@
 package com.example.inmobiliariaapp.ui.inmueble;
 
+import android.app.Application;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -10,13 +14,14 @@ import androidx.lifecycle.ViewModel;
 import com.example.inmobiliariaapp.models.Inmueble;
 import com.example.inmobiliariaapp.request.ApiClient;
 
-public class DetalleInmuebleViewModel extends ViewModel {
+public class DetalleInmuebleViewModel extends AndroidViewModel {
 
-    private ApiClient apiClient;
     private MutableLiveData<Inmueble> inmueble;
+    private Context context;
 
-    public DetalleInmuebleViewModel() {
-        apiClient = ApiClient.getApi();
+    public DetalleInmuebleViewModel(@NonNull Application application) {
+        super(application);
+        context = application.getApplicationContext();
         inmueble = new MutableLiveData<>();
     }
 
