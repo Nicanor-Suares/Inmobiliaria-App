@@ -16,7 +16,7 @@ public class ApiClient {
 
     private ApiClient(){
         //Nos conectamos a nuestra "Base de Datos"
-        cargaDatos();
+        //cargaDatos();
     }
     //Método para crear una instancia de ApiClient
     public static ApiClient getApi(){
@@ -120,38 +120,38 @@ public class ApiClient {
         }
     }
 
-    private void cargaDatos(){
+//    private void cargaDatos(){
 
         //Propietarios
-        Propietario juan = new Propietario(1,23492012L,"Juan","Perez","juan@mail.com","123","2664553447", R.drawable.juan);
-        Propietario sonia = new Propietario(2,17495869L,"Sonia","Lucero","sonia@mail.com","123","266485417",R.drawable.sonia);
-        propietarios.add(juan);
-        propietarios.add(sonia);
+//        Propietario juan = new Propietario(1,23492012L,"Juan","Perez","juan@mail.com","123","2664553447", R.drawable.juan);
+//        Propietario sonia = new Propietario(2,17495869L,"Sonia","Lucero","sonia@mail.com","123","266485417",R.drawable.sonia);
+//        propietarios.add(juan);
+//        propietarios.add(sonia);
 
         //Inquilinos
-        Inquilino mario = new Inquilino(100,25340691L,"Mario","Luna","Aiello sup.","luna@mail.com","2664253411","Lucero Roberto","2664851422");
-        inquilinos.add(mario);
+//        Inquilino mario = new Inquilino(100,25340691L,"Mario","Luna","Aiello sup.","luna@mail.com","2664253411","Lucero Roberto","2664851422");
+//        inquilinos.add(mario);
 
         //Inmuebles
-        Inmueble salon = new Inmueble(501,"Colon 340","comercial","salon",2,20000,juan,true,"http://www.secsanluis.com.ar/servicios/salon1.jpg");
-        Inmueble casa = new Inmueble(502,"Mitre 800","particular","casa",2,15000,juan,true,"http://www.secsanluis.com.ar/servicios/casa1.jpg");
-        Inmueble otraCasa = new Inmueble(503,"Salta 325","particular","casa",3,17000,sonia,true,"http://www.secsanluis.com.ar/servicios/casa2.jpg");
-        Inmueble dpto = new Inmueble(504,"Lavalle 450","particular","dpto",2,25000,sonia,true,"http://www.secsanluis.com.ar/servicios/departamento1.jpg");
-        Inmueble casita = new Inmueble(505,"Belgrano 218","particular","casa",5,90000,sonia,true,"http://www.secsanluis.com.ar/servicios/casa3.jpg");
-
-        inmuebles.add(salon);
-        inmuebles.add(casa);
-        inmuebles.add(otraCasa);
-        inmuebles.add(dpto);
-        inmuebles.add(casita);
+//        Inmueble salon = new Inmueble(501,"Colon 340","comercial","salon",2,20000,juan,true,"http://www.secsanluis.com.ar/servicios/salon1.jpg");
+//        Inmueble casa = new Inmueble(502,"Mitre 800","particular","casa",2,15000,juan,true,"http://www.secsanluis.com.ar/servicios/casa1.jpg");
+//        Inmueble otraCasa = new Inmueble(503,"Salta 325","particular","casa",3,17000,sonia,true,"http://www.secsanluis.com.ar/servicios/casa2.jpg");
+//        Inmueble dpto = new Inmueble(504,"Lavalle 450","particular","dpto",2,25000,sonia,true,"http://www.secsanluis.com.ar/servicios/departamento1.jpg");
+//        Inmueble casita = new Inmueble(505,"Belgrano 218","particular","casa",5,90000,sonia,true,"http://www.secsanluis.com.ar/servicios/casa3.jpg");
+//
+//        inmuebles.add(salon);
+//        inmuebles.add(casa);
+//        inmuebles.add(otraCasa);
+//        inmuebles.add(dpto);
+//        inmuebles.add(casita);
 
         //Contratos
-        Contrato uno = new Contrato(701, "05/08/2020","05/08/2023",17000,mario,otraCasa);
-        contratos.add(uno);
-        //Pagos
-        pagos.add(new Pago(900,1,uno,17000,"10/08/2020"));
-        pagos.add(new Pago(901,2,uno,17000,"10/09/2020"));
-        pagos.add(new Pago(902,3,uno,17000,"10/10/2020"));
+//        Contrato uno = new Contrato(701, "05/08/2020","05/08/2023",17000,mario,otraCasa);
+//        contratos.add(uno);
+//        //Pagos
+//        pagos.add(new Pago(900,1,uno,17000,"10/08/2020"));
+//        pagos.add(new Pago(901,2,uno,17000,"10/09/2020"));
+//        pagos.add(new Pago(902,3,uno,17000,"10/10/2020"));
 
-    }
+//    }
 }

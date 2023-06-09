@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         vm = new ViewModelProvider.AndroidViewModelFactory(getApplication()).create(MainActivityViewModel.class);
 
-        //vm.verificarSesion();
+        vm.verificarSesion();
 
         binding.btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

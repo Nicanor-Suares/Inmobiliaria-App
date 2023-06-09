@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -37,7 +38,8 @@ public class NavigationActivity extends AppCompatActivity {
         vm = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(NavigationActivityViewModel.class);
 
         vm.getPropietario().observe(this, propietario -> {
-            ((ImageView) binding.navView.getHeaderView(0).findViewById(R.id.ivAvatarPropietario)).setImageResource(propietario.getAvatar());
+            ImageView ivAvatarPropietario = binding.navView.getHeaderView(0).findViewById(R.id.ivAvatarPropietario);
+            Glide.with(this).load(propietario.getAvatar()).into(ivAvatarPropietario);
             ((TextView) binding.navView.getHeaderView(0).findViewById(R.id.tvNombrePropietario)).setText(propietario.getNombreCompleto());
             ((TextView) binding.navView.getHeaderView(0).findViewById(R.id.tvEmailPropietario)).setText(propietario.getEmail());
         });
