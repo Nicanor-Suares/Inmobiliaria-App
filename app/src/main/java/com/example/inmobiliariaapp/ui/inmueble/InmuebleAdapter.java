@@ -13,6 +13,7 @@ import com.example.inmobiliariaapp.R;
 import com.example.inmobiliariaapp.databinding.ItemInmuebleBinding;
 import com.example.inmobiliariaapp.models.Inmueble;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class InmuebleAdapter extends RecyclerView.Adapter<InmuebleAdapter.ViewHolder> {
@@ -36,7 +37,12 @@ public class InmuebleAdapter extends RecyclerView.Adapter<InmuebleAdapter.ViewHo
     public void onBindViewHolder(@NonNull InmuebleAdapter.ViewHolder holder, int position) {
         Inmueble inmueble = inmuebles.get(position);
         holder.binding.tvDireccionInmueble.setText(inmueble.getDireccion());
-        holder.binding.tvPrecioInmueble.setText(String.valueOf(inmueble.getPrecio()));
+
+        DecimalFormat decimalFormat = new DecimalFormat("#,##0");
+        String formattedPrice = decimalFormat.format(inmueble.getPrecio());
+        holder.binding.tvPrecioInmueble.setText(formattedPrice);
+        //holder.binding.tvPrecioInmueble.setText(String.valueOf(inmueble.getPrecio()));
+
         Glide.with(holder.binding.ivFotoInmueble.getContext()).load(inmueble.getImagen()).into(holder.binding.ivFotoInmueble);
     }
 
