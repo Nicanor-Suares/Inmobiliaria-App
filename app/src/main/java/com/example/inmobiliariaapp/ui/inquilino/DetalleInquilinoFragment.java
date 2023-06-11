@@ -30,10 +30,7 @@ public class DetalleInquilinoFragment extends Fragment {
             binding.tvNombreInquilino.setText(inquilino.getNombre());
             binding.tvApellidoInquilino.setText(inquilino.getApellido());
             binding.tvDniInquilino.setText(String.valueOf(inquilino.getDNI()));
-            binding.tvEmailInquilino.setText(inquilino.getEmail());
             binding.tvTelefonoInquilino.setText(String.valueOf(inquilino.getTelefono()));
-            binding.tvGaranteInquilino.setText(inquilino.getNombreGarante());
-            binding.tvTelefonoGarante.setText(String.valueOf(inquilino.getTelefonoGarante()));
         });
 
         return root;

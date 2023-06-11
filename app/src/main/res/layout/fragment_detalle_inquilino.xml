@@ -54,48 +54,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email:" />
-    <TextView
-        android:id="@+id/tvEmailInquilino"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email: "
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Teléfono:" />
     <TextView
         android:id="@+id/tvTelefonoInquilino"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Telefono: "
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Garante:" />
-    <TextView
-        android:id="@+id/tvGaranteInquilino"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Garante: "
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Telefono del garante::" />
-    <TextView
-        android:id="@+id/tvTelefonoGarante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Telefono Garante: "
         android:textSize="16sp"
         android:textStyle="bold" />
 </LinearLayout>

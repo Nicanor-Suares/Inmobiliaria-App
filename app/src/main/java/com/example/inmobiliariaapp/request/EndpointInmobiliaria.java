@@ -32,7 +32,7 @@ public interface EndpointInmobiliaria {
     Call<List<Inmueble>> obtenerInmuebles(@Header("Authorization") String token);
 
     @GET("inmueble/alquilados")
-    Call<List<Inmueble>> obtenerInmueblesAlquiladas(@Header("Authorization") String token);
+    Call<List<Inmueble>> obtenerInmueblesAlquilados(@Header("Authorization") String token);
 
     @GET("Inquilino/Obtener/{id}")
     Call<Inquilino> obtenerInquilinoPorInmueble(@Header("Authorization") String token, @Path("id") int id);

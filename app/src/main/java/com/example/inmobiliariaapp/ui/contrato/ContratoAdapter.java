@@ -18,8 +18,6 @@ import com.example.inmobiliariaapp.models.Inmueble;
 import java.util.ArrayList;
 
     public class ContratoAdapter extends RecyclerView.Adapter<ContratoAdapter.ViewHolder>{
-
-    private ArrayList<Contrato> contratos;
     private ArrayList<Inmueble> inmuebles;
     private LayoutInflater inflater;
 
