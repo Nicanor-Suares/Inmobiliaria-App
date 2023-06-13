@@ -34,7 +34,7 @@ public class PagoAdapter extends RecyclerView.Adapter<PagoAdapter.ViewHolder> {
         Pago pago = pagos.get(position);
         holder.binding.tvCodigoPago.setText(String.valueOf(pago.getIdPago()));
         holder.binding.tvFechaPago.setText(pago.getFechaDePago());
-        holder.binding.tvCodigoContrato.setText(String.valueOf(pago.getContrato().getIdContrato()));
+        holder.binding.tvCodigoContrato.setText(String.valueOf(pago.getIdContrato()));
         holder.binding.tvImportePago.setText(String.valueOf(pago.getImporte()));
         holder.binding.tvNroPago.setText(String.valueOf(pago.getNumero()));
     }

@@ -11,7 +11,7 @@ public class Inmueble implements Serializable {
     private String tipo;
     private int ambientes;
     private double precio;
-    private Propietario propietario;
+    private Propietario propietarioInmueble;
     private boolean estado=true;
     private String imagen;
 
@@ -22,7 +22,7 @@ public class Inmueble implements Serializable {
         this.tipo = tipo;
         this.ambientes = ambientes;
         this.precio = precio;
-        this.propietario = propietario;
+        this.propietarioInmueble = propietario;
         this.estado = estado;
         this.imagen = imagen;
     }
@@ -78,11 +78,11 @@ public class Inmueble implements Serializable {
     }
 
     public Propietario getPropietario() {
-        return propietario;
+        return propietarioInmueble;
     }
 
     public void setPropietario(Propietario propietario) {
-        this.propietario = propietario;
+        this.propietarioInmueble = propietario;
     }
 
     public boolean isEstado() {

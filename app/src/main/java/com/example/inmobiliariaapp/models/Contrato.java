@@ -8,18 +8,22 @@ public class Contrato implements Serializable {
     private int idContrato;
     private String fechaInicio;
     private String fechaFin;
-    private double montoAlquiler;
-    private Inquilino inquilino;
-    private Inmueble inmueble;
+    private boolean activo;
+    private int inquilinoId;
+    private Inquilino inquilinoContrato;
+    private int inmuebleId;
+    private Inmueble inmuebleContrato;
 
     public Contrato() {}
-    public Contrato(int idContrato, String fechaInicio, String fechaFin, double montoAlquiler, Inquilino inquilino, Inmueble inmueble) {
+    public Contrato(int idContrato, String fechaInicio, String fechaFin, boolean activo, int inquilinoId , Inquilino inquilino, int inmuebleId , Inmueble inmueble) {
         this.idContrato = idContrato;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
-        this.montoAlquiler = montoAlquiler;
-        this.inquilino = inquilino;
-        this.inmueble = inmueble;
+        this.activo = activo;
+        this.inquilinoId = inquilinoId;
+        this.inquilinoContrato = inquilino;
+        this.inmuebleId = inmuebleId;
+        this.inmuebleContrato = inmueble;
     }
 
     public int getIdContrato() {
@@ -46,29 +50,28 @@ public class Contrato implements Serializable {
         this.fechaFin = fechaFin;
     }
 
-    public double getMontoAlquiler() {
-        return montoAlquiler;
+    public boolean isActivo() {
+        return activo;
     }
 
-    public void setMontoAlquiler(double montoAlquiler) {
-        this.montoAlquiler = montoAlquiler;
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
-
 
     public Inquilino getInquilino() {
-        return inquilino;
+        return inquilinoContrato;
     }
 
     public void setInquilino(Inquilino inquilino) {
-        this.inquilino = inquilino;
+        this.inquilinoContrato = inquilino;
     }
 
     public Inmueble getInmueble() {
-        return inmueble;
+        return inmuebleContrato;
     }
 
     public void setInmueble(Inmueble inmueble) {
-        this.inmueble = inmueble;
+        this.inmuebleContrato = inmueble;
     }
 
     @Override

@@ -90,20 +90,20 @@ public class ApiClient {
         return null;
     }
     //Dado un Contrato, retorna los pagos de dicho contrato
-    public ArrayList<Pago> obtenerPagos(Contrato contratoVer){
-        ArrayList<Pago> temp=new ArrayList<>();
-        for(Contrato contrato:contratos){
-            if(contrato.equals(contratoVer)){
-                for(Pago pago:pagos){
-                    if(pago.getContrato().equals(contrato)){
-                        temp.add(pago);
-                    }
-                }
-            }
-            break;
-        }
-        return temp;
-    }
+//    public ArrayList<Pago> obtenerPagos(Contrato contratoVer){
+//        ArrayList<Pago> temp=new ArrayList<>();
+//        for(Contrato contrato:contratos){
+//            if(contrato.equals(contratoVer)){
+//                for(Pago pago:pagos){
+//                    if(pago.getContrato().equals(contrato)){
+//                        temp.add(pago);
+//                    }
+//                }
+//            }
+//            break;
+//        }
+//        return temp;
+//    }
     //Actualizar Perfil
     public void actualizarPerfil(Propietario propietario){
         int posicion = propietarios.indexOf(propietario);

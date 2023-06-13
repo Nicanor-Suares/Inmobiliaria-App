@@ -28,9 +28,13 @@ public class DetalleContratoFragment extends Fragment {
             binding.tvCodigoContrato.setText(String.valueOf(contrato.getIdContrato()));
             binding.tvFechaInicio.setText(contrato.getFechaInicio());
             binding.tvFechaFin.setText(contrato.getFechaFin());
+            if(contrato.isActivo()) {
+                binding.cbActivo.setChecked(true);
+            } else {
+                binding.cbActivo.setChecked(false);
+            }
             binding.tvInquilinoContrato.setText(contrato.getInquilino().getNombre() + " " + contrato.getInquilino().getApellido());
             binding.tvInmuebleContrato.setText(contrato.getInmueble().getDireccion());
-            binding.tvMontoContrato.setText(String.valueOf(contrato.getMontoAlquiler()));
         });
 
         binding.btnPagos.setOnClickListener(v -> {
