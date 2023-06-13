@@ -67,7 +67,7 @@ public class DetalleContratoViewModel extends AndroidViewModel {
             @Override
             public void onResponse(Call<Contrato> call, Response<Contrato> response) {
                 if (response.isSuccessful()) {
-                    if(response.body() == null){
+                    if(response.body() != null){
                         contrato.setValue(response.body());
                     }
                 }
